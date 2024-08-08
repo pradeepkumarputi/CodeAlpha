@@ -1,0 +1,134 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #00ff616b;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0ef;
+}
+
+/* Container styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 80px auto 0; 
+    flex-grow: 1;
+    align-items: center;
+}
+
+/* Image box styles */
+.image-box {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.image-box:hover {
+    transform: translateY(-5px);
+}
+
+.box {
+    width: 94%;
+    height: 277px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid rgb(7, 148, 163);
+    position: relative;
+}
+
+.text-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.text-content h1 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.text-content a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: rgba(7, 148, 163, 0.8);
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.text-content a:hover {
+    background-color: rgba(7, 148, 163, 1);
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #fff;
+}
